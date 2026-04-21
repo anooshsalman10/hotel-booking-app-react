@@ -78,13 +78,13 @@ Users can explore rooms, apply filters, view details, and securely access protec
 ![Home](assets/screenshots/hotelbooking1.png)
 
 ###  Hotel Details
-![Details](assets/screenshots/hotelbooking2.png)
+![Details](src/assets/screenshots/hotelbooking2.png)
 
 ###  Filters
-![Filters](assets/screenshots/hotelbooking6.png)
+![Filters](src/assets/screenshots/hotelbooking6.png)
 
 ###  Bookings
-![Bookings](assets/screenshots/hotelbooking4.png)
+![Bookings](src/assets/screenshots/hotelbooking4.png)
 
 ## Author
 - ANOOSH SALMAN
