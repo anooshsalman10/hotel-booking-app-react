@@ -75,7 +75,7 @@ Users can explore rooms, apply filters, view details, and securely access protec
 ##  Screenshots
 
 ###  Home Page
-![Home](assets/screenshots/hotelbooking1.png)
+![Home](src/assets/screenshots/hotelbooking1.png)
 
 ###  Hotel Details
 ![Details](src/assets/screenshots/hotelbooking2.png)
