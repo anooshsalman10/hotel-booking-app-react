@@ -1,0 +1,37 @@
+import React from 'react'
+import Title from '../components/Title.jsx';
+import { Assets } from '../assets/Assets';
+import { specialOffers } from '../assets/Assets';
+import { Link } from 'react-router-dom';
+
+const SpecialOffers = () => {
+    return (
+            <div className='flex flex-col items-center px-6 md:px-16 lg:px-24 xl:px-32 pt-20 pb-30 py-12'>
+                <div className='flex flex-col md:flex-row items-center justify-between w-full px-32 py-8'>
+                    <Title align='center' title='Special Offers' subTitle='Our special packages and limited-time offers will enhance your experience and give you unforgettable memories' className='text-lg text' />
+                </div>
+
+                <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-12'>
+                    {specialOffers.map((item) => (
+                        <div key={item._id} className='group relative flex flex-col items-start justify-between gap-1 pt-12 md:pt-18 px-4 rounded-xl text-white bg-no-repeat bg-cover bg-center' style={{ backgroundImage: `url(${item.image})` }}>
+                            <p className='px-3 py-1 absolute top-4 left-4 text-xs bg-white text-gray-800 font-medium rounded-full'>{item.priceOff}%OFF</p>
+                            <div>
+                                <p className='text-2xl font-medium font-playfair'>{item.title}</p>
+                                <p>{item.description}</p>
+                                <p className='text-xs text-white/70 mt-3'>Expires{item.expiryDate}</p>
+                            </div>
+                            <Link to='/specialOffers'>
+                        <button className='flex items-center gap-2 font-medium cursor-pointer   mt-4  mb-5'>
+                            Read More
+                            <img src={Assets.arrowIcon} alt="arrowIcon" className='invert group-hover:translate-x-1 transition-all' />
+                        </button>
+                           </Link>     
+                        </div>
+                    ))}
+
+                </div>
+            </div>
+    )
+}
+
+export default SpecialOffers
