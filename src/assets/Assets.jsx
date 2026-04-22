@@ -6,7 +6,7 @@ import testimonials2 from './testimonials2.jpg';
 import testimonials3 from './testimonials3.jpg';
 import badgeIcon from './badgeIcon.png';
 import freeBreakFastIcon from './freeBreakFastIcon.svg';
-import handPlatter from './handplatter.svg';
+import handPlatter from './handPlatter.svg';
 import heartIcon from './heartIcon.png';
 import homeIcon from './homeIcon.png';
 import locationIcon from './locationIcon.png';
